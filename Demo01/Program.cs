@@ -22,13 +22,31 @@ namespace Demo01
                 Edad = 21
             };
 
-            Console.WriteLine(persona1.NombresCompletos);
+            Estudiante estudiante = new Estudiante { 
+                Nombre = "Dave",
+                Apellidos = "Santivañez",
+                Codigo = 20
+            };
+
+            Profesor profesor1 = new Profesor
+            {
+                Nombre = "Dave",
+                Apellidos = "Santivañez",
+                Sueldo = 4500
+            };
+
+            profesor1.CalcularSueldoNeto();
+            Console.WriteLine(profesor1.Sueldo);
+
+
+
+            //Console.WriteLine(persona1.NombresCompletos);
 
             Triangulo triangulo1 = new Triangulo();
             triangulo1.Base = 5;
             triangulo1.Altura = 4;
             triangulo1.MostrarArea();
-            Console.WriteLine(triangulo1.Area);
+            //Console.WriteLine(triangulo1.Area);
             Console.Read();
         }
     }
